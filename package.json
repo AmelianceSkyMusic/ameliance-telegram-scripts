@@ -1,0 +1,58 @@
+{
+	"name": "ameliance-telegram-scripts",
+	"version": "0.0.1",
+	"description": "scripts",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"require": "./dist/index.js",
+			"import": "./dist/index.mjs"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"test": "jest",
+		"local-publish": "npm link && npm link ameliance-telegram-scripts",
+		"lint": "next lint",
+		"demo": "npx ts-node demo/src/index"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AmelianceSkyMusic/ameliance-telegram-scripts.git"
+	},
+	"keywords": [
+		"scripts",
+		"typescript",
+		"helpers",
+		"telegram",
+		"grammy",
+		"bot"
+	],
+	"author": "Ameliance SkyMusic <AmelianceSkyMusic@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/AmelianceSkyMusic/ameliance-telegram-scripts/issues"
+	},
+	"homepage": "https://github.com/AmelianceSkyMusic/ameliance-telegram-scripts#readme",
+	"peerDependencies": {
+		"grammy": "^1.0.0",
+		"@google/generative-ai": "^0.16.0"
+	},
+	"devDependencies": {
+		"husky": "^9.1.5",
+		"jest": "^29.7.0",
+		"lint-staged": "^15.2.10",
+		"ts-jest": "^29.2.5",
+		"ts-node": "^10.9.2",
+		"tsup": "^8.2.4",
+		"typescript": "^5.6.2"
+	},
+	"dependencies": {
+		"ameliance-scripts": "^0.3.3"
+	}
+}
