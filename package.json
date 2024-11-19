@@ -53,6 +53,6 @@
 		"typescript": "^5.6.2"
 	},
 	"dependencies": {
-		"ameliance-scripts": "^0.3.3"
+		"ameliance-scripts": "^0.4.0"
 	}
 }
