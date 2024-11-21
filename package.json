@@ -11,13 +11,14 @@
 			"import": "./dist/index.mjs"
 		}
 	},
+	"sideEffects": false,
 	"files": [
 		"dist"
 	],
 	"scripts": {
 		"build": "tsup",
 		"test": "jest",
-		"local-publish": "npm link && npm link ameliance-telegram-scripts",
+		"link": "npm link && npm link ameliance-telegram-scripts",
 		"lint": "next lint",
 		"demo": "npx ts-node demo/src/index"
 	},
@@ -41,7 +42,8 @@
 	"homepage": "https://github.com/AmelianceSkyMusic/ameliance-telegram-scripts#readme",
 	"peerDependencies": {
 		"grammy": "^1.0.0",
-		"@google/generative-ai": "^0.16.0"
+		"@google/generative-ai": "^0.16.0",
+		"ameliance-scripts": "^0.4.102"
 	},
 	"devDependencies": {
 		"husky": "^9.1.5",
@@ -51,8 +53,5 @@
 		"ts-node": "^10.9.2",
 		"tsup": "^8.2.4",
 		"typescript": "^5.6.2"
-	},
-	"dependencies": {
-		"ameliance-scripts": "^0.4.0"
 	}
 }

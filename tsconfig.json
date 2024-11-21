@@ -13,8 +13,7 @@
 		"moduleResolution": "Node",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
-		"noEmit": false,
-		"jsx": "react",
-		"outDir": "dist"
+		"outDir": "dist",
+		"declaration": true
 	}
 }
