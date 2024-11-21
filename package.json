@@ -43,7 +43,7 @@
 	"peerDependencies": {
 		"grammy": "^1.0.0",
 		"@google/generative-ai": "^0.16.0",
-		"ameliance-scripts": "^0.4.102"
+		"ameliance-scripts": "^0.4.105"
 	},
 	"devDependencies": {
 		"husky": "^9.1.5",
