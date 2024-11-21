@@ -11,7 +11,6 @@ export async function runWithRandomInterval(
 ) {
 	callback();
 
-	console.time('runWithRandomInterval');
 	const randomInterval = getRandomNumber(min, max) * oneMinInMs;
 	ctx.reply(
 		`Next post will be sent at: ${getCurrentTimeWithOffset(randomInterval)}\nPost delay: ${
@@ -20,7 +19,6 @@ export async function runWithRandomInterval(
 	);
 
 	setTimeout(() => {
-		console.timeEnd('runWithRandomInterval');
 		runWithRandomInterval(ctx, callback, min, max);
 	}, randomInterval);
 }
